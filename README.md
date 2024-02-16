@@ -33,43 +33,33 @@ GET http://localhost:8080/api/log?page=1&limit=10
 ```json
 [
   {
-    "date": "2024-02-16T00:46:48.199Z",
-    "subject": "biology",
-    "grade": 5,
-    "student": {
-      "personalCode": "000",
-      "name": "Vitaliy",
-      "lastName": "Kochergin"
-    }
-  },
-  {
-    "date": "2024-02-16T00:49:17.483Z",
-    "subject": "biology",
+    "date": "2024-02-16T14:39:45.215Z",
+    "subject": "music",
     "grade": 4,
     "student": {
-      "personalCode": "000",
-      "name": "Vitaliy",
-      "lastName": "Kochergin"
+      "personalCode": "0425AB018373",
+      "name": "Jackie",
+      "lastName": "Thompson"
     }
   },
   {
-    "date": "2024-02-16T00:49:23.728Z",
-    "subject": "biology",
+    "date": "2024-02-16T14:40:00.220Z",
+    "subject": "geography",
     "grade": 4,
     "student": {
-      "personalCode": "000",
-      "name": "Vitaliy",
-      "lastName": "Kochergin"
+      "personalCode": "9201CE420779",
+      "name": "Aaren",
+      "lastName": "Elliott"
     }
   },
   {
-    "date": "2024-02-16T01:08:52.120Z",
-    "subject": "biology",
-    "grade": 3,
+    "date": "2024-02-16T14:40:15.252Z",
+    "subject": "science",
+    "grade": 4,
     "student": {
-      "personalCode": "000",
-      "name": "Vitaliy",
-      "lastName": "Kochergin"
+      "personalCode": "9201CE420779",
+      "name": "Aaren",
+      "lastName": "Elliott"
     }
   }
 ]
@@ -85,17 +75,24 @@ GET http://localhost:8080/api/statistic/:personalCode
 ```json
 {
   "student": {
-    "personalCode": "000",
-    "name": "Vitaliy",
-    "lastName": "Kochergin"
+    "personalCode": "9201CE420779",
+    "name": "Aaren",
+    "lastName": "Elliott"
   },
   "statistic": [
     {
-      "subject": "biology",
-      "maxGrade": 5,
-      "minGrade": 3,
+      "subject": "geography",
+      "maxGrade": 4,
+      "minGrade": 4,
       "avgGrade": 4,
-      "totalGrades": 4
+      "totalGrades": 1
+    },
+    {
+      "subject": "science",
+      "maxGrade": 4,
+      "minGrade": 4,
+      "avgGrade": 4,
+      "totalGrades": 1
     }
   ]
 }
