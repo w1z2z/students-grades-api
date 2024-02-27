@@ -1,4 +1,4 @@
-# Тестовое задание "Студенты и оценки"
+# Students and Grades Management System
 
 Стэк проекта: Nest.js, Prisma, Postgres, NATS, Swagger
 
